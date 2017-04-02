@@ -1,28 +1,12 @@
 // routes/note_routes.js
+/* This routing is created based on a tutorial:
+https://medium.freecodecamp.com/building-a-simple-node-js-api-in-under-30-minutes-a07ea9e390d2
+*/
 
 //since _id is an object, not a string 
 var ObjectID = require('mongodb').ObjectID;
 
-function pythonFunction() {
-    var spawn = require("child_process").spawn;
-    var process = spawn('python',["./python/pscript.py", 5]);
-    process.stdout.on('data', function (data){
-      // Do something with the data returned from python script
-      console.log("From python script: " + data);
-    });              
-}
-
 module.exports = function(app, db) {
-
- /************************************************* */
- 
-app.post('/python', (req, res) => {
-   console.log("Python accessed from server");
-   pythonFunction();
-   res.send('Python executed!');
-  }); //python END
-
-  /************************************************* */
 
 app.get('/notes/:id', (req, res) => {
     const id = req.params.id;
