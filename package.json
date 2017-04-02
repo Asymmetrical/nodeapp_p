@@ -1,7 +1,7 @@
 {
-  "name": "nodeapp",
+  "name": "nodeapp_p",
   "version": "1.0.0",
-  "description": "Boilerplate for any Nodejs app",
+  "description": "Boilerplate for any Nodejs app with Python",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Asymmetrical/nodeapp.git"
+    "url": "git+https://github.com/Asymmetrical/nodeapp_p.git"
   },
   "author": "asymmetrical",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Asymmetrical/nodeapp/issues"
+    "url": "https://github.com/Asymmetrical/nodeapp_p/issues"
   },
-  "homepage": "https://github.com/Asymmetrical/nodeapp#readme",
+  "homepage": "https://github.com/Asymmetrical/nodeapp_p#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",

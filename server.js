@@ -19,3 +19,14 @@ MongoClient.connect(db.url, (err, database) => {
   });               
 });
 
+// communicate with Python
+// http://stackoverflow.com/questions/23450534/how-to-call-python-function-from-nodejs
+
+var spawn = require("child_process").spawn;
+var process = spawn('python',["./python/pscript.py", 5]);
+
+process.stdout.on('data', function (data){
+  console.log("From python script: " + data);
+// Do something with the data returned from python script
+});
+
